@@ -35,20 +35,13 @@ const { title } = Astro.props;
 	</head>
 	<body class="min-h-screen bg-background font-sans antialiased">
 		<div class="relative flex min-h-screen flex-col">
-			<main class="flex-1 flex items-center justify-center">
-				<div class="container relative">
+			<main class="flex-1 flex items-center justify-center min-h-screen">
+				<div class="container relative py-8">
 					<section class="mx-auto w-full max-w-5xl">
 						<slot />
 					</section>
 				</div>
 			</main>
-			<footer class="border-t py-6 md:py-0">
-				<div class="container flex flex-col items-center justify-between gap-4 md:h-14 md:flex-row">
-					<p class="text-center text-sm leading-loose text-muted-foreground md:text-left">
-						Built by <a href="https://m1n.land" target="_blank" rel="noreferrer" class="font-medium underline underline-offset-4">m1n</a>
-					</p>
-				</div>
-			</footer>
 		</div>
 	</body>
 </html>
