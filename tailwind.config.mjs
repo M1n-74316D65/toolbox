@@ -5,7 +5,13 @@ export default {
 	theme: {
     	extend: {
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Geist', 'system-ui', 'sans-serif'],
+			},
+			fontWeight: {
+				normal: '450',
+				medium: '500',
+				semibold: '600',
+				bold: '700',
 			},
     		borderRadius: {
     			lg: 'var(--radius)',
